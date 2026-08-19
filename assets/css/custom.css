@@ -1,6 +1,11 @@
-/* Light blue accent — overrides al-folio default magenta in light mode. */
+/* Sky blue accent — overrides al-folio default theme colors. */
 :root {
-  --global-theme-color: #2698ba;
-  --global-hover-color: #2698ba;
-  --global-code-bg-color: rgba(38, 152, 186, 0.05);
+  --global-theme-color: #82c8e5;
+  --global-hover-color: #82c8e5;
+  --global-code-bg-color: rgba(130, 200, 229, 0.08);
+}
+
+html[data-theme='dark'] {
+  --global-theme-color: #82c8e5;
+  --global-hover-color: #82c8e5;
 }
