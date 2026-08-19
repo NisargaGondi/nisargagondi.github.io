@@ -2,4 +2,9 @@ cv_pdf: /assets/pdf/NisargaGondi_Resume_ML.pdf
 email: ngondi@andrew.cmu.edu
 github_username: NisargaGondi
 linkedin_username: nisarga-gondi
-# scholar_userid: # add when you create Google Scholar profile
+orcid_id: 0009-0003-1881-204X
+# scholar_userid: add after Google Scholar author profile is created
+custom_social:
+  logo: ai ai-ieee ai-lg
+  title: IEEE Xplore
+  url: https://ieeexplore.ieee.org/document/11115894

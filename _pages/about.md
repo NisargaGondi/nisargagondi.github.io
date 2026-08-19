@@ -8,11 +8,12 @@ subtitle: >
 
 profile:
   align: right
-  image:
+  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p>Pittsburgh, PA</p>
     <p><a href="mailto:ngondi@andrew.cmu.edu">ngondi@andrew.cmu.edu</a></p>
+    <p><a href="https://orcid.org/0009-0003-1881-204X">ORCID 0009-0003-1881-204X</a></p>
 
 selected_papers: true
 social: true
