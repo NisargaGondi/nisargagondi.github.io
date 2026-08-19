@@ -1,0 +1,6 @@
+/* Site accent: light blue (overrides default magenta in light mode). */
+:root {
+  --global-theme-color: #2698ba;
+  --global-hover-color: #2698ba;
+  --global-code-bg-color: rgba(38, 152, 186, 0.05);
+}
