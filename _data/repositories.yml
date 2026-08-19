@@ -1,0 +1,9 @@
+github_users:
+  - NisargaGondi
+
+repo_description_lines_max: 2
+
+github_repos:
+  - NisargaGondi/openrole
+  - NisargaGondi/JailVax
+  - NisargaGondi/DynamicIterativeImputation
