@@ -1,11 +1,22 @@
-/* Sky blue accent — overrides al-folio default theme colors. */
+/* Sky blue accent (#82C8E5) — overrides al-folio default theme colors. */
 :root {
-  --global-theme-color: #82c8e5;
-  --global-hover-color: #82c8e5;
-  --global-code-bg-color: rgba(130, 200, 229, 0.08);
+  --global-theme-color: #82c8e5 !important;
+  --global-hover-color: #6bb8d9 !important;
+  --global-code-bg-color: rgba(130, 200, 229, 0.12) !important;
 }
 
 html[data-theme='dark'] {
-  --global-theme-color: #82c8e5;
-  --global-hover-color: #82c8e5;
+  --global-theme-color: #82c8e5 !important;
+  --global-hover-color: #9dd4ef !important;
+}
+
+a,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link,
+.navbar.navbar-light .navbar-brand.social a:hover i::before,
+.publications ol.bibliography li .abbr abbr {
+  color: var(--global-theme-color);
+}
+
+.publications ol.bibliography li .abbr abbr {
+  background-color: var(--global-theme-color) !important;
 }
