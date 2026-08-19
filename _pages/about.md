@@ -25,11 +25,7 @@ latest_posts:
   enabled: false
 ---
 
-I'm a graduate student at CMU INI (AIE-IS), working on applied ML and AI security at [CyLab](https://www.cylab.cmu.edu/).
-
-**Research.** [Self-Evolving Defense (SED)](/projects/sed/) for LLM agents (lead-author paper under review at ACL ARR), and offline scam detection on mobile with the [Quik](https://github.com/NisargaGondi/quik-sms-scam-ng) pipeline.
-
-**Industry.** ONNX notification classification at Samsung (93.15% accuracy) and 5G cloud sizing automation at Ericsson.
+I work where ML meets real products and real adversaries, on systems you can break and then make harder to break. I'm a grad student at CMU INI (AIE-IS), working on applied ML and AI security at [CyLab](https://www.cylab.cmu.edu/). Right now that's [Self-Evolving Defense (SED)](/projects/sed/) for LLM agents (lead-author paper under review at ACL ARR) and offline scam detection with [Quik](https://github.com/NisargaGondi/quik-sms-scam-ng). Before CMU I shipped ONNX models on Android at Samsung and built Ericsson's Quick Dimensioning Tool, cutting profile selection from hours to minutes. I care about results you can measure.
 
 **Stack.** Python, PyTorch, LangGraph, Kotlin/Android, ONNX, Kubernetes, PostgreSQL.
 
