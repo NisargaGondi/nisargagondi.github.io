@@ -1,11 +1,17 @@
 ---
 layout: page
-title: SMS Scam Detection (Quik)
+title: Quik SMS Scam Detection
 description: Offline ML inference and Android research app at CyLab
-img:
 importance: 4
 category: research
 github: NisargaGondi/quik-sms-scam-ng
 ---
 
-Prototyping **offline-capable ML inference** for mobile SMS/MMS scam detection at CMU CyLab, with Python preprocessing tooling and **Quik** — an open-source Android (Kotlin) app for message categorization and user-facing scam alerts.
+**CyLab, Carnegie Mellon University · 2025–Present**
+
+Research pipeline for offline-capable ML on mobile SMS/MMS scam detection.
+
+- Python preprocessing tooling with a Git-based review workflow
+- **Quik**: open-source Android (Kotlin) app for message categorization and user-facing scam alerts
+
+**Links:** [Code](https://github.com/NisargaGondi/quik-sms-scam-ng)

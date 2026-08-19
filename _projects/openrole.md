@@ -2,10 +2,16 @@
 layout: page
 title: OpenRole
 description: LangGraph multi-agent job search with human-in-the-loop outreach
-img:
 importance: 1
 category: research
 github: NisargaGondi/openrole
 ---
 
-**OpenRole** (CMU 14-789) is a LangGraph multi-agent system (FastAPI, Next.js) that scouts roles, maps hiring teams, and drafts personalized outreach with human-in-the-loop review. PostgreSQL-backed pipelines, **220+ automated tests**, multi-provider LLM routing.
+**CMU 14-789 · Spring 2026**
+
+Multi-agent system (FastAPI + Next.js) that scouts roles, maps hiring teams, and drafts outreach with human review before anything is sent.
+
+- LangGraph orchestration with PostgreSQL-backed pipelines
+- Multi-provider LLM routing and **220+ automated tests**
+
+**Links:** [Code](https://github.com/NisargaGondi/openrole)

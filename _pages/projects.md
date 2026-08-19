@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: Research systems, industry internships, and selected academic work.
+description: Research, internships, and academic work.
 nav: true
 nav_order: 3
-display_categories: [research, industry]
+display_categories: [research, industry, academic]
 horizontal: false
 ---

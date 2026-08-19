@@ -1,11 +1,14 @@
 ---
 layout: page
 title: JailVax
-description: Adversarial self-play + Z3 formal verification for LLM jailbreak defense
-img:
+description: Adversarial self-play with Z3 formal verification for LLM jailbreak defense
 importance: 3
 category: research
 github: NisargaGondi/JailVax
 ---
 
-**JailVax** (CMU 14-795 AIIS) combines adversarial self-play with Z3-based formal safety verification to strengthen LLM jailbreak resistance — discovering attacks, formalizing violated rules, and provably closing attack vectors.
+**CMU 14-795 AIIS · Course research project**
+
+Combines adversarial self-play with Z3-based formal safety checks. The loop discovers jailbreaks, formalizes violated rules, and closes attack paths with proofs where possible.
+
+**Links:** [Code](https://github.com/NisargaGondi/JailVax)

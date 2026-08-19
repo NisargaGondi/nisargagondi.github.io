@@ -1,13 +1,13 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: >
   <strong>MS Artificial Intelligence Engineering – Information Security</strong> @ Carnegie Mellon (INI) ·
   Research @ <a href="https://www.cylab.cmu.edu/">CyLab</a>
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: false
   more_info: >
@@ -25,12 +25,12 @@ latest_posts:
   enabled: false
 ---
 
-I build **applied ML and AI-security systems** — from LLM-agent defenses and mobile scam detection at CMU CyLab to production ONNX deployment at Samsung and cloud automation at Ericsson.
+I'm a graduate student at CMU INI (AIE-IS), working on applied ML and AI security at [CyLab](https://www.cylab.cmu.edu/).
 
-**Current research:** Self-Evolving Defense (SED) for LLM agents; offline ML inference for SMS/MMS scam detection ([Quik](https://github.com/NisargaGondi/quik-sms-scam-ng) research pipeline).
+**Research.** [Self-Evolving Defense (SED)](/projects/sed/) for LLM agents, and offline scam detection on mobile with the [Quik](https://github.com/NisargaGondi/quik-sms-scam-ng) pipeline.
 
-**Selected industry work:** Ericsson Quick Dimensioning Tool (5G Observability & LCM); Samsung Bixby Smart Notification (93.15% accuracy, ONNX).
+**Industry.** ONNX notification classification at Samsung (93.15% accuracy) and 5G cloud sizing automation at Ericsson.
 
-**Tools:** Python · PyTorch · LangGraph · Kotlin/Android · ONNX · Kubernetes · PostgreSQL
+**Stack.** Python, PyTorch, LangGraph, Kotlin/Android, ONNX, Kubernetes, PostgreSQL.
 
-Full portfolio (projects & coursework): [Google Sites](https://sites.google.com/view/nisargagondi)
+Coursework and older project write-ups: [Google Sites portfolio](https://sites.google.com/view/nisargagondi).
