@@ -1,4 +1,4 @@
-/* Site accent: light blue (overrides default magenta in light mode). */
+/* Light blue accent — overrides al-folio default magenta in light mode. */
 :root {
   --global-theme-color: #2698ba;
   --global-hover-color: #2698ba;
