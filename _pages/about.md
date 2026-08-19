@@ -27,7 +27,7 @@ latest_posts:
 
 I'm a graduate student at CMU INI (AIE-IS), working on applied ML and AI security at [CyLab](https://www.cylab.cmu.edu/).
 
-**Research.** [Self-Evolving Defense (SED)](/projects/sed/) for LLM agents, and offline scam detection on mobile with the [Quik](https://github.com/NisargaGondi/quik-sms-scam-ng) pipeline.
+**Research.** [Self-Evolving Defense (SED)](/projects/sed/) for LLM agents (lead-author paper under review at ACL ARR), and offline scam detection on mobile with the [Quik](https://github.com/NisargaGondi/quik-sms-scam-ng) pipeline.
 
 **Industry.** ONNX notification classification at Samsung (93.15% accuracy) and 5G cloud sizing automation at Ericsson.
 
