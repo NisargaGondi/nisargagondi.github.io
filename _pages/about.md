@@ -29,4 +29,4 @@ I work where ML meets real products and real adversaries, on systems you can bre
 
 **Stack.** Python, PyTorch, LangGraph, Kotlin/Android, ONNX, Kubernetes, PostgreSQL.
 
-Coursework and older project write-ups: [Google Sites portfolio](https://sites.google.com/view/nisargagondi).
+Undergrad and older project write-ups: [Google Sites portfolio](https://sites.google.com/view/nisargagondi).
