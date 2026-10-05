@@ -17,6 +17,7 @@ profile:
 
 selected_papers: true
 social: true
+contact_form: true
 
 announcements:
   enabled: false
@@ -25,8 +26,10 @@ latest_posts:
   enabled: false
 ---
 
-I work where ML meets real products and real adversaries, on systems you can break and then make harder to break. I'm a grad student at CMU INI (AIE-IS), working on applied ML and AI security at [CyLab](https://www.cylab.cmu.edu/). Right now that's [Self-Evolving Defense (SED)](/projects/sed/) for LLM agents (co-first-author paper under review at ACL ARR) and offline scam detection with [Quik](https://github.com/NisargaGondi/quik-sms-scam-ng). Before CMU I shipped ONNX models on Android at Samsung and built Ericsson's Quick Dimensioning Tool, cutting profile selection from hours to minutes. I care about results you can measure.
+I work where ML meets real products and real adversaries, on systems you can break and then make harder to break. (the adversaries are more punctual.) I'm a grad student at CMU INI (AIE-IS), working on applied ML and AI security at [CyLab](https://www.cylab.cmu.edu/). Right now that's [Self-Evolving Defense (SED)](https://github.com/Infini-AI-Lab/SED) for LLM agents (co-first-author paper under review at ACL ARR). Before CMU I shipped models at [Samsung PRISM](https://www.samsungprism.com/) and built Ericsson's Quick Dimensioning Tool, cutting profile selection from hours to minutes. I care about results you can measure.
 
-**Stack.** Python, PyTorch, LangGraph, Kotlin/Android, ONNX, Kubernetes, PostgreSQL.
+[Resume (PDF)]({{ '/assets/pdf/NisargaGondi_Resume_AISec.pdf' | relative_url }})
+
+**Stack.** Python, PyTorch, LangGraph, Kotlin/Android, ONNX, Kubernetes, PostgreSQL. (yes, all of them. no, not at once.)
 
 Undergrad and older project write-ups: [Google Sites portfolio](https://sites.google.com/view/nisargagondi).

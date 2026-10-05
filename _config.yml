@@ -6,8 +6,6 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Nisarga
 middle_name:
 last_name: Gondi
-contact_note: >
-  Best reach: <a href="mailto:ngondi@andrew.cmu.edu">ngondi@andrew.cmu.edu</a>
 description: >
   MS AIE-IS @ CMU · CyLab research · Applied ML, LLM security, and production systems.
 footer_text: >
@@ -16,7 +14,7 @@ footer_text: >
   <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
 keywords: machine learning, AI security, LLM agents, CMU, CyLab, portfolio
 lang: en
-icon: 🔬
+icon: 🚀
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://nisargagondi.github.io
@@ -97,9 +95,9 @@ al_folio:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
-socials_in_search: true
-posts_in_search: true
+search_enabled: false
+socials_in_search: false
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -136,8 +134,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Blog
+blog_description: Notes on AI security, ML systems, and building things. Occasional opinions.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -146,7 +144,7 @@ pagination:
   enabled: true
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -169,21 +167,8 @@ giscus:
 disqus_shortname: al-folio # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
-# External sources.
-# If you have blog posts published on medium.com or other external sources,
-# you can display them in your blog by adding a link to the RSS feed.
-# Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+# External sources (disabled until you start publishing).
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -348,8 +333,8 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: []
+display_categories: []
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -456,7 +441,7 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
-    - ".gif"
+    # ".gif" intentionally excluded: webp conversion freezes animated gifs used as project card thumbnails
   output_formats:
     webp: "-auto-orient -quality 85"
 
