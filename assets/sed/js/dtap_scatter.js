@@ -2,10 +2,8 @@
   "use strict";
 
   const SCRIPT_EL = document.currentScript;
-  const BADGE_BASE = (SCRIPT_EL && SCRIPT_EL.dataset.badgeBase)
-    || "/assets/sed/images/badges/";
-  const DATA_URL = (SCRIPT_EL && SCRIPT_EL.dataset.dataUrl)
-    || "/assets/sed/data/dtap_scatter.json";
+  const BADGE_BASE = (SCRIPT_EL && SCRIPT_EL.dataset.badgeBase) || "/assets/sed/images/badges/";
+  const DATA_URL = (SCRIPT_EL && SCRIPT_EL.dataset.dataUrl) || "/assets/sed/data/dtap_scatter.json";
   const BADGE_VER = "dtapui2";
   const BADGE_RADIUS = 21;
   const HOVER_SCALE = 1.38;
@@ -129,18 +127,10 @@
         let rgb;
         if (t < 0.5) {
           const u = t / 0.5;
-          rgb = [
-            lerp(rose[0], mid[0], u),
-            lerp(rose[1], mid[1], u),
-            lerp(rose[2], mid[2], u),
-          ];
+          rgb = [lerp(rose[0], mid[0], u), lerp(rose[1], mid[1], u), lerp(rose[2], mid[2], u)];
         } else {
           const u = (t - 0.5) / 0.5;
-          rgb = [
-            lerp(mid[0], mint[0], u),
-            lerp(mid[1], mint[1], u),
-            lerp(mid[2], mint[2], u),
-          ];
+          rgb = [lerp(mid[0], mint[0], u), lerp(mid[1], mint[1], u), lerp(mid[2], mint[2], u)];
         }
         const idx = (j * w + i) * 4;
         buf[idx] = rgb[0];
@@ -158,8 +148,7 @@
 
   function drawCornerLabels(ctx, area) {
     ctx.save();
-    ctx.font =
-      '600 10px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    ctx.font = '600 10px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
     ctx.textBaseline = "top";
 
     const bad = "⚠  Worst: vulnerable & weak";
@@ -214,12 +203,8 @@
     ctx.textBaseline = "top";
 
     if (highlight) {
-      ctx.font =
-        '600 11px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
-      const tw = Math.max(
-        ctx.measureText(line1).width,
-        ctx.measureText(line2).width
-      );
+      ctx.font = '600 11px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+      const tw = Math.max(ctx.measureText(line1).width, ctx.measureText(line2).width);
       const padX = 8;
       const padY = 4;
       const boxW = tw + padX * 2;
@@ -229,17 +214,14 @@
       ctx.fill();
       ctx.fillStyle = "#fff";
       ctx.fillText(line1, x, ly);
-      ctx.font =
-        '500 10px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+      ctx.font = '500 10px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
       ctx.fillStyle = "rgba(255,255,255,0.78)";
       ctx.fillText(line2, x, ly + 13);
     } else {
-      ctx.font =
-        '600 10px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+      ctx.font = '600 10px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
       ctx.fillStyle = "#2a302e";
       ctx.fillText(line1, x, ly);
-      ctx.font =
-        '500 9px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+      ctx.font = '500 9px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
       ctx.fillStyle = "#6b736f";
       ctx.fillText(line2, x, ly + 12);
     }
@@ -260,14 +242,10 @@
     const lines = [
       MODEL_META[pt.model].short + " · " + DEFENSE_SHORT[pt.defense],
       "Benign " + pt.benign.toFixed(1) + "%",
-      (metric === "indirect" ? "Indirect" : "Direct") +
-        " ASR " +
-        pt[metric].toFixed(1) +
-        "%",
+      (metric === "indirect" ? "Indirect" : "Direct") + " ASR " + pt[metric].toFixed(1) + "%",
     ];
     ctx.save();
-    ctx.font =
-      '500 11px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    ctx.font = '500 11px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
     let maxW = 0;
     lines.forEach(function (t) {
       maxW = Math.max(maxW, ctx.measureText(t).width);
@@ -297,11 +275,9 @@
     ctx.fillStyle = "#171a18";
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
-    ctx.font =
-      '600 11px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    ctx.font = '600 11px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
     ctx.fillText(lines[0], bx + pad, by + 8);
-    ctx.font =
-      '500 11px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    ctx.font = '500 11px "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
     ctx.fillStyle = "#5e6561";
     ctx.fillText(lines[1], bx + pad, by + 24);
     ctx.fillStyle = "#0d9488";
@@ -387,7 +363,9 @@
       };
       const labelOrder = [];
       for (let i = 0; i < pts.length; i++) if (i !== hoverIdx) labelOrder.push(i);
-      labelOrder.sort(function (a, b) { return prio(pts[a]) - prio(pts[b]); });
+      labelOrder.sort(function (a, b) {
+        return prio(pts[a]) - prio(pts[b]);
+      });
       const placed = [];
       const overlaps = function (b) {
         return placed.some(function (o) {
@@ -582,14 +560,7 @@
       .map(function (k) {
         const m = MODEL_META[k];
         const sample = BADGE_BASE + k + "_no_defense.png?v=" + BADGE_VER;
-        return (
-          '<span class="dtap-leg-item">' +
-          '<img src="' +
-          sample +
-          '" alt="' + m.label + ' badge" class="dtap-leg-badge">' +
-          m.label +
-          "</span>"
-        );
+        return '<span class="dtap-leg-item">' + '<img src="' + sample + '" alt="' + m.label + ' badge" class="dtap-leg-badge">' + m.label + "</span>";
       })
       .join("");
 
@@ -597,17 +568,8 @@
       .map(function (d) {
         const bold = d.key === "sed" ? " dtap-leg-sed" : "";
         const logo = defenseLegendBadge(d.key);
-        const icon = logo
-          ? '<img src="' + logo + '" alt="' + d.label + ' chip" class="dtap-leg-badge">'
-          : '<span class="dtap-leg-nodef">—</span>';
-        return (
-          '<span class="dtap-leg-item' +
-          bold +
-          '">' +
-          icon +
-          d.label +
-          "</span>"
-        );
+        const icon = logo ? '<img src="' + logo + '" alt="' + d.label + ' chip" class="dtap-leg-badge">' : '<span class="dtap-leg-nodef">—</span>';
+        return '<span class="dtap-leg-item' + bold + '">' + icon + d.label + "</span>";
       })
       .join("");
 

@@ -27,6 +27,7 @@ pagination:
 
 {% assign postlist = paginator.posts %}
 {% if postlist.size == 0 %}
+
   <p class="blog-empty">No posts yet. The drafts exist. They are shy. (first one coming soon.)</p>
 {% else %}
   <ul class="post-list">
@@ -70,9 +71,9 @@ pagination:
     {% endfor %}
   </ul>
 
-  {% if page.pagination.enabled %}
-    {% include pagination.liquid %}
-  {% endif %}
+{% if page.pagination.enabled %}
+{% include pagination.liquid %}
+{% endif %}
 {% endif %}
 
 </div>

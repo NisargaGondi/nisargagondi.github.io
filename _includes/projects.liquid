@@ -6,6 +6,11 @@
       {% assign proj_url = project.url | relative_url %}
     {% endif %}
     {% if project.img %}
+      {% assign img_ext = project.img | split: '.' | last %}
+      {% assign is_gif = false %}
+      {% if img_ext == 'gif' %}
+        {% assign is_gif = true %}
+      {% endif %}
       <a href="{{ proj_url }}" class="card-media-link" tabindex="-1">
         {%
           include figure.liquid
@@ -14,6 +19,7 @@
           sizes = "250px"
           alt="project thumbnail"
           class="card-img-top"
+          avoid_scaling=is_gif
         %}
       </a>
     {% endif %}
@@ -26,7 +32,14 @@
           {% else %}
             {% assign gh_url = project.github | prepend: 'https://github.com/' %}
           {% endif %}
-          <a class="title-gh-icon" href="{{ gh_url }}" aria-label="{{ project.title }} code repository" title="Code repository" target="_blank" rel="noopener noreferrer">
+          <a
+            class="title-gh-icon"
+            href="{{ gh_url }}"
+            aria-label="{{ project.title }} code repository"
+            title="Code repository"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fa-brands fa-github"></i>
           </a>
         {% endif %}

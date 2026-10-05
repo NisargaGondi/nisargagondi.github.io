@@ -48,11 +48,7 @@
       "color": "#1B5E20"
     }
   ],
-  "domains": [
-    "crm",
-    "workflow",
-    "code"
-  ],
+  "domains": ["crm", "workflow", "code"],
   "points": [
     {
       "model": "deepseek",
